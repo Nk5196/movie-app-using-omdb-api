@@ -2,16 +2,16 @@
 document.getElementById("submit").addEventListener("click",getdata) ;
 
 function getdata(){
-    var query=document.getElementById("movie").value;
+    var query=document.getElementById("movies").value;
   
-    let res;
+    // let res;
     // let data=[];
-    // const url=`http://www.omdbapi.com/?apikey=a1333184&s=${query}`;
+    // const url=`http://www.omdbapi.com/?apikey=tt3896198&s=${query}`;
     
     const container=document.getElementById("container")    ;
     container.innerHTML=[]
     
-    fetch(`http://www.omdbapi.com/?apikey=a1333184&s=${query}`)
+    fetch(`http://www.omdbapi.com/?apikey=bf5e9dd3&s=${query}`)
     .then(function(res){
     
         return res.json();
